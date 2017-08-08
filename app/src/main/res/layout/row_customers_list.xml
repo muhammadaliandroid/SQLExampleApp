@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlCustomerList"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCustomerName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCustomerAddress"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tvCustomerName"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCustomerPhone"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tvCustomerAddress"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tvCustomerPhone">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEditCutomer"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Edit"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDeleteCustomer"
+            android:layout_toEndOf="@id/btnEditCutomer"
+            android:layout_alignBottom="@id/btnEditCutomer"
+            android:layout_marginTop="8dp"
+            android:text="Delete"/>
+
+     </RelativeLayout>
+
+</RelativeLayout>
